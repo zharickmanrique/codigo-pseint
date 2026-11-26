@@ -1,0 +1,21 @@
+Algoritmo ejercicio_6
+	// Una entidad necesita identificar el tipo de documento de una persona. El usuario deberá seleccionar entre cédula de ciudadanía, tarjeta de identidad, cédula de extranjería y pasaporte. El programa mostrará el nombre completo del documento elegido.
+	Definir tipodocumento Como Caracter;
+	
+	Escribir " ingresa el tipo de documento que tienes (CC= cedula de ciudadania, TI= tarjeta de identidad, CE= cedula de extranjeria, P= pasaporte)";
+	Leer tipodocumento;
+	
+	Segun tipodocumento Hacer
+		caso "CC":
+			Escribir " documento seleccionado, cedula de ciudadania";
+		caso "TI":
+			Escribir " documento seleccionado, tarjeta de identidad";
+		caso "CE":
+			Escribir " documento seleccionado, cedula de extranjeria";
+		caso "P":
+			Escribir " documento seleccionado, pasaporte";
+		De Otro Modo:
+			Escribir " documento invalido";
+	Fin Segun
+	
+FinAlgoritmo

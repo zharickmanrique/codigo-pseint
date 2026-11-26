@@ -1,0 +1,22 @@
+Algoritmo ejercicio_7
+	// Una biblioteca desea crear un programa que permita a sus usuarios seleccionar una acción. Las opciones son consultar libros, prestar un libro, devolver un libro o consultar las normas de la biblioteca. Según la opción elegida, el programa deberá mostrar un mensaje con la acción correspondiente.
+	Definir tipo_opcion Como Caracter;
+	
+	Escribir " BIENVENIDO A LA BIBLIOTECA";
+	Escribir " ingrese la opcion que desea realizar en la biblioteca (CL=consultar libros, PL= prestar un libro, DL= devolver un libro, CNB= consultar las normas de la biblioteca ";
+	Leer tipo_opcion;
+	
+	Segun tipo_opcion Hacer
+		caso "CL":
+			Escribir " accion elegida, consultar libros";
+		caso "PL":
+			Escribir " accion elegida, prestar un libro";
+		caso "DL":
+			Escribir " accion elegida, devolver un libro";
+		caso "CNB":
+			Escribir " accion elegida, consultar las normas de la biblioteca";
+		De Otro Modo:
+			Escribir " accion invalida";
+	Fin Segun
+	
+FinAlgoritmo

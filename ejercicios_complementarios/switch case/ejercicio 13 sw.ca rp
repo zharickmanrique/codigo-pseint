@@ -1,0 +1,26 @@
+Algoritmo ejercicio_13
+	// Una tienda virtual necesita un programa para registrar la opinión de sus clientes sobre un producto. El usuario podrá seleccionar una calificación de una a cinco estrellas. Según el número de estrellas, el programa deberá mostrar un mensaje que describa el nivel de satisfacción del cliente.
+	Definir calificacion Como Entero;
+	
+	Escribir " ingresa tu calificacion del producto de 1 a 5 estrellas";
+	leer calificacion
+	
+	Segun calificacion Hacer
+		caso 1:
+			Escribir " calificacion: horrible";
+		caso 2:
+			Escribir " calificacion: malo";
+		caso 3:
+			Escribir " calificacion: aceptable";
+		caso 4:
+			Escribir " calificacion: bueno";
+		caso 5:
+			Escribir " calificacion: increible";
+		De Otro Modo:
+			Escribir " calificacion invalida";
+	Fin Segun
+	
+	
+	
+	
+FinAlgoritmo

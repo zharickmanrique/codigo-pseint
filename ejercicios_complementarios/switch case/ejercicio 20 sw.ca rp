@@ -1,0 +1,33 @@
+Algoritmo ejercicio_20
+	// Una institución educativa necesita un programa que permita seleccionar el nivel de formación al que desea ingresar un estudiante: preescolar, primaria, secundaria o educación media. Según la opción seleccionada, el programa deberá mostrar el nivel correspondiente y el valor de la matrícula.
+	Definir nivel Como Caracter;
+	Definir matricula Como Real;
+	
+	Escribir "INSTITUCION EDUCATIVA CLASICO";
+	Escribir " seleccione el nivel de formacion (P= preescolar, A= primaria, S= secundaria, E= educacion media):";
+	Leer nivel
+	
+	Segun nivel Hacer
+		caso "P":
+			matricula<- 80000;
+			Escribir " el nivel seleccionado es: preescolar";
+			Escribir " el valor de la matricula es:"+ ConvertirATexto(matricula);
+		Caso "A":
+			matricula<- 100000;
+			Escribir " el nivel seleccionado es: primaria";
+			Escribir " el valor de la matricula es:"+ ConvertirATexto(matricula);
+		Caso "S":
+			matricula<- 150000;
+			Escribir " el nivel seleccionado es: secundaria";
+			Escribir " el valor de la matricula es:"+ ConvertirATexto(matricula);
+		Caso "E":
+		    matricula<- 200000;
+			Escribir " el nivel seleccionado es: educacion media";
+			Escribir " el valor de la matricula es:"+ ConvertirATexto(matricula);
+		De Otro Modo:
+			Escribir " nivel de formacion no valido";
+	Fin Segun
+	
+	
+	
+FinAlgoritmo

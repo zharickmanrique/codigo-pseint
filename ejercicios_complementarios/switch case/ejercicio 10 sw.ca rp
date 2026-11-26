@@ -1,0 +1,22 @@
+Algoritmo ejercicio_10
+// Una tienda necesita un programa que permita a sus clientes consultar los precios de diferentes prendas. Las opciones son camiseta, pantalón, vestido y chaqueta. Según la prenda seleccionada, el sistema deberá mostrar su precio.	
+	Definir opcionprendas Como Caracter;
+	
+	Escribir " ingrese el tipo de prenda que desea consultar el precio (C= camiseta, P= pantalon, V= vestido, C= chaqueta)";
+	Leer opcionprendas; 
+	
+	Segun opcionprendas Hacer
+		caso "C":
+			Escribir " el precio de la prenda es de: $40000";
+		caso "P":
+			Escribir" el precio de la prenda es de: $70000";
+		caso "V":
+			Escribir " el precio de la prenda es de: $60000";
+		caso "C":
+			Escribir " el precio de la prenda es de: $90000";
+		De Otro Modo:
+			Escribir " opcion incorrecta";
+	Fin Segun
+	
+	
+FinAlgoritmo
