@@ -1,0 +1,24 @@
+Algoritmo ejercicio_14
+	// Un negocio de comidas rápidas necesita un programa que permita seleccionar el estado de un pedido. Las opciones son recibido, en preparación, listo para entregar y entregado. El usuario ingresará el número correspondiente y el programa mostrará el estado del pedido.
+	Definir opcionNum Como Entero;
+	
+	Escribir " ingrese un numero de 1 a 4 para seleccionar el estado de su pedido";
+	Leer opcionNum;
+	
+    Segun opcionNum Hacer
+		caso 1:
+			Escribir " estado del pedido: recibido";
+		caso 2:
+			Escribir " estado del pedido: en preparacion";
+		caso 3:
+			Escribir " estado del pedido: listo para entregar";
+		caso 4:
+			Escribir " estado del pedido: entregado";
+		De Otro Modo:
+			Escribir " opcion no valida";
+	Fin Segun
+	
+	
+	
+	
+FinAlgoritmo

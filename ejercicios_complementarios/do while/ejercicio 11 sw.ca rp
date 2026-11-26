@@ -1,0 +1,39 @@
+Algoritmo ejercicio_11
+// Un estudiante está desarrollando un programa que permita seleccionar una figura geométrica entre cuadrado, rectángulo, triángulo y círculo. Después de seleccionar la figura, el usuario deberá ingresar los datos necesarios para calcular su área. El programa deberá utilizar la opción elegida para realizar la operación correspondiente.	
+	Definir figurageo Como Caracter;
+	Definir lado, base, altura, largo, ancho, radio, area como real;
+	
+	Escribir " seleccione una figura geometrica (C=cuadrado, R= rectangulo, T= triangulo, O= circulo)";
+	Leer figurageo;
+	
+	Segun figurageo Hacer
+		caso "C":
+			Escribir " ingrese el lado del cuadrado";
+			Leer lado;
+			area<-lado * lado;
+			Escribir " el area del cuadrado es:" + ConvertirATexto(area);
+		caso "R":
+			Escribir " ingrese el largo del rectangulo";
+			Leer largo;
+			Escribir " ingrese el ancho del rectangulo";
+			Leer ancho;
+			area<-largo * ancho;
+			Escribir "el area del rectangulo es:" + ConvertirATexto(area);
+		Caso "T":
+			Escribir " ingrese la base del triangulo";
+			Leer base;
+			Escribir " ingrese la altura del triangulo";
+			Leer altura;
+			area<-base * altura / 2;
+			Escribir " el area del triangulo es:" + ConvertirATexto(area);
+		caso "O":
+			Escribir "Ingrese el radio del circulo:";
+            Leer radio;
+            area<- 3.1416 * radio * radio;
+            Escribir "El area del circulo es: " ConvertirATexto(area);
+		De Otro Modo:
+			Escribir "opcion no valida";
+	Fin Segun
+	
+	
+FinAlgoritmo

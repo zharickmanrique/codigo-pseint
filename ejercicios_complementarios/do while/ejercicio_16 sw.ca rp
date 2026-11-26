@@ -1,0 +1,59 @@
+Algoritmo ejercicio_16
+	// Una ferretería necesita un programa que permita registrar la compra de un producto. El usuario deberá seleccionar el tipo de producto entre cemento, pintura, herramientas o materiales eléctricos. Después, deberá ingresar la cantidad de unidades que desea comprar y el precio por unidad. Según el producto seleccionado, el programa deberá calcular el subtotal, aplicar el descuento correspondiente a cada categoría y mostrar el total que debe pagar el  cliente.
+	Definir tipoproduct Como Caracter;
+	Definir cant Como Entero;
+	Definir precio, subtotal, descuento, total Como Real;
+	
+	Escribir "FERRETERIA";
+	
+	Escribir "seleccione el tipo de producto que desea comprar( C=cemento, P= pintura, H= herramientas, ME= materiales electricos)";
+	Leer tipoproduct;
+	
+	
+	Segun tipoproduct Hacer
+		caso "C":
+			Escribir " ingrese la cantidad de productos";
+			Leer cant;
+			Escribir " ingrese el precio por unidad";
+			Leer precio;
+			subtotal<-cant * precio
+			descuento<-subtotal * 0.15;
+			Escribir " el descuento del producto es: " + ConvertirATexto(descuento);
+			total<-subtotal - descuento;
+			Escribir " el total a pagar por el producto es:" + ConvertirATexto(total);
+		Caso "P":
+			Escribir " ingrese la cantidad de productos";
+			Leer cant;
+			Escribir " ingrese el precio por unidad";
+			Leer precio;
+			subtotal<-cant * precio
+			descuento<-subtotal * 0.20;
+			Escribir " el descuento del producto es: " + ConvertirATexto(descuento);
+			total<-subtotal - descuento;
+			Escribir " el total a pagar por el producto es:" + ConvertirATexto(total);
+		Caso "H":
+			Escribir " ingrese la cantidad de productos";
+			Leer cant;
+			Escribir " ingrese el precio por unidad";
+			Leer precio;
+			subtotal<-cant * precio
+			descuento<-subtotal * 0.10;
+			Escribir " el descuento del producto es: " + ConvertirATexto(descuento);
+			total<-subtotal - descuento;
+			Escribir " el total a pagar por el producto es:" + ConvertirATexto(total);
+	    Caso "ME":
+			Escribir " ingrese la cantidad de productos";
+			Leer cant;
+			Escribir " ingrese el precio por unidad";
+			Leer precio;
+			subtotal<-cant * precio
+			descuento<-subtotal * 0.25;
+			Escribir " el descuento del producto es: " + ConvertirATexto(descuento);
+			total<-subtotal - descuento;
+			Escribir " el total a pagar por el producto es:" + ConvertirATexto(total);
+		De Otro Modo:
+			Escribir " tipo de producto invalido";
+	Fin Segun
+	
+
+FinAlgoritmo

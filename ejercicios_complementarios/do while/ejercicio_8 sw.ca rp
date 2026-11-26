@@ -1,0 +1,24 @@
+Algoritmo ejercicio_8
+	// Un estudiante necesita un programa para convertir una temperatura ingresada en grados Celsius. El usuario podrá seleccionar si desea convertirla a Fahrenheit o a Kelvin. El programa deberá realizar la conversión correspondiente y mostrar el resultado.
+	Definir tipotemperatura Como caracter;
+	Definir fahrenheit, kelvin, celsius Como Real;
+	
+	
+	Escribir "ingresa la temperatura en grados celsius";
+	Leer celsius;
+	
+	Escribir " elige a que temperatura deseas convertir la temperatura ingresada en grados celsius (F= fahrenheit, K= kelvin)";
+	Leer tipotemperatura
+	
+	Segun tipotemperatura Hacer
+		caso "F":
+			fahrenheit<- (celsius * 9/5) + 32;
+			Escribir " la temperatura en grados fahrenheit es de: " + ConvertirATexto(fahrenheit) + "grados";
+		caso "K":
+			kelvin<- celsius + 273
+			Escribir " la temperatura en grados kelvin es de:" + ConvertirATexto(kelvin) + "grados";
+		De Otro Modo:
+			Escribir " temperatura incorrecta";
+	Fin Segun
+	
+FinAlgoritmo
